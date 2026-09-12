@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Transparansi Insiden — Google / Alphabet | AEP Platform</title>
+  <meta name="description" content="Halaman transparansi publik untuk insiden AI Overview (SGE) Google yang menampilkan informasi medis dan ilmiah yang salah." />
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVBAR
+       ============================================================ -->
+  <nav class="navbar" role="navigation">
+    <div class="navbar__inner">
+      <a href="../index.html" class="navbar__brand">
+        <img src="AEP_Logo.jpg" alt="AEP Logo" class="navbar__logo-img" />
+        <span>AEP Platform</span>
+      </a>
+      <div class="navbar__links">
+        <a href="admin.html" class="navbar__link">Admin Dashboard</a>
+        <a href="#timeline" class="navbar__link">Timeline</a>
+        <a href="#faq" class="navbar__link">FAQ</a>
+        <a href="#claim-form-section" class="btn btn--primary" style="padding: 8px 18px; font-size: 0.82rem;">
+          Ajukan Klaim
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       HERO SECTION
+       ============================================================ -->
+  <section class="public-hero" style="background: linear-gradient(135deg, #1A4731 0%, #0F172A 100%);">
+    <div class="container">
+      <div class="public-hero__content">
+        <div class="public-hero__badge">
+          <span class="public-hero__badge-dot"></span>
+          <span>Laporan Transparansi Aktif</span>
+        </div>
+
+        <h1 class="public-hero__company">🔍 Google / Alphabet — AI Overview Hallucination</h1>
+
+        <p class="public-hero__apology">
+          Google mengakui bahwa fitur AI Overview (sebelumnya Search Generative Experience) telah menampilkan informasi yang
+          tidak akurat dan berpotensi berbahaya dalam hasil pencarian. Kami berkomitmen untuk transparansi penuh dalam
+          menangani insiden ini dan memastikan keselamatan pengguna menjadi prioritas utama.
+        </p>
+
+        <div class="public-hero__actions">
+          <a href="#claim-form-section" class="btn btn--hero btn--hero-primary">
+            💬 Ajukan Klaim Kompensasi
+          </a>
+          <a href="#timeline" class="btn btn--hero btn--hero-outline">
+            📋 Lihat Timeline Perbaikan
+          </a>
+        </div>
+
+        <!-- Glass Info Card -->
+        <div class="glass-card">
+          <div class="glass-card__row">
+            <div class="glass-card__item">
+              <div class="glass-card__value">23 Mei 2024</div>
+              <div class="glass-card__label">Tanggal Insiden</div>
+            </div>
+            <div class="glass-card__item">
+              <div class="glass-card__value">9</div>
+              <div class="glass-card__label">Langkah Perbaikan</div>
+            </div>
+            <div class="glass-card__item">
+              <div class="glass-card__value">5</div>
+              <div class="glass-card__label">Klaim Diajukan</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       INCIDENT SUMMARY
+       ============================================================ -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section__header">
+        <div class="section__tag">📄 Ringkasan Insiden</div>
+        <h2 class="section__title">Apa yang Terjadi?</h2>
+      </div>
+      <div class="card" style="max-width: 720px; margin: 0 auto;">
+        <p style="font-size: 0.95rem; line-height: 1.75; color: var(--aep-charcoal);">
+          Pada <strong>Mei 2024</strong>, Google meluncurkan fitur <strong>AI Overview</strong> secara luas di Google Search.
+          Fitur ini menampilkan ringkasan jawaban yang dihasilkan AI di bagian atas hasil pencarian. Namun, AI Overview
+          menghasilkan banyak informasi yang salah dan berpotensi berbahaya, termasuk:
+          <br><br>
+          <strong>🪨 "Makan batu"</strong> — AI Overview menyarankan bahwa memakan satu batu kecil per hari baik untuk kesehatan
+          karena mengandung mineral. Informasi ini bersumber dari artikel satir The Onion yang tidak dikenali sebagai humor oleh AI.
+          <br><br>
+          <strong>🍕 "Lem pada pizza"</strong> — AI Overview merekomendasikan menambahkan lem Elmer's ke saus pizza agar keju
+          tidak meluncur. Sumber informasi ini berasal dari komentar humor di Reddit yang dibaca secara literal oleh AI.
+          <br><br>
+          <strong>💊 Informasi medis salah</strong> — AI Overview memberikan saran medis yang tidak akurat untuk beberapa
+          kondisi kesehatan, termasuk dosis obat yang keliru dan rekomendasi perawatan yang bertentangan dengan panduan medis resmi.
+          <br><br>
+          <strong>🔬 Fakta ilmiah keliru</strong> — Beberapa fakta ilmiah ditampilkan dengan confidence tinggi padahal
+          sepenuhnya salah, termasuk informasi tentang fotosintesis, astronomi, dan biologi dasar.
+          <br><br>
+          Insiden ini menjadi viral di media sosial dan mendapat liputan luas dari media internasional. Google merespons
+          dengan menonaktifkan AI Overview untuk kategori query tertentu (terutama medis dan kesehatan) dan melakukan
+          perbaikan pada pipeline fact-checking.
+        </p>
+        <hr class="divider" />
+        <h3 style="font-size: 0.95rem; margin-bottom: 8px;">💰 Paket Kompensasi</h3>
+        <p style="font-size: 0.9rem; line-height: 1.65; color: var(--aep-slate);">
+          Google berkomitmen untuk: (1) Perbaikan layanan AI Overview secara fundamental, (2) Transparansi penuh melalui
+          laporan bulanan tentang akurasi AI, (3) Kompensasi individual untuk pengguna yang mengalami kerugian langsung
+          akibat informasi salah dari AI Overview. Klaim dapat diajukan melalui formulir di bawah ini.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       TIMELINE SECTION
+       ============================================================ -->
+  <section class="section" id="timeline">
+    <div class="container">
+      <div class="section__header">
+        <div class="section__tag">🔄 360° Action Activation</div>
+        <h2 class="section__title">Timeline Perbaikan</h2>
+        <p class="section__desc">
+          Langkah-langkah konkret yang Google ambil untuk menyelesaikan insiden dan memastikan keamanan pengguna.
+        </p>
+      </div>
+
+      <div class="timeline" style="max-width: 680px; margin: 0 auto;">
+        <!-- H+0 -->
+        <div class="timeline__item" style="animation-delay: 0.1s;">
+          <div class="timeline__dot timeline__dot--completed">✓</div>
+          <div class="timeline__card">
+            <div class="timeline__hour">H+0</div>
+            <h3 class="timeline__title">Deteksi & Respons Awal</h3>
+            <p class="timeline__desc">Tim Google Search Quality mendeteksi laporan viral di media sosial tentang AI Overview yang memberikan informasi salah. War room dibentuk dalam 4 jam.</p>
+            <div class="timeline__status"><span class="badge badge--green">✅ Selesai</span></div>
+          </div>
+        </div>
+
+        <!-- H+1 -->
+        <div class="timeline__item" style="animation-delay: 0.2s;">
+          <div class="timeline__dot timeline__dot--completed">✓</div>
+          <div class="timeline__card">
+            <div class="timeline__hour">H+1</div>
+            <h3 class="timeline__title">Emergency Disable untuk Medical Queries</h3>
+            <p class="timeline__desc">AI Overview dinonaktifkan untuk semua query terkait kesehatan, medis, obat-obatan, dan saran diet. Safety first — prioritas melindungi pengguna dari informasi kesehatan yang salah.</p>
+            <div class="timeline__status"><span class="badge badge--green">✅ Selesai</span></div>
+          </div>
+        </div>
+
+        <!-- H+2 -->
+        <div class="timeline__item" style="animation-delay: 0.3s;">
+          <div class="timeline__dot timeline__dot--completed">✓</div>
+          <div class="timeline__card">
+            <div class="timeline__hour">H+2</div>
+            <h3 class="timeline__title">Pernyataan Resmi Google</h3>
+            <p class="timeline__desc">Liz Reid (VP of Search) mengeluarkan statement resmi yang mengakui kegagalan AI Overview. Google menyatakan sebagian besar contoh viral berasal dari query yang jarang dicari atau telah dimanipulasi.</p>
+            <div class="timeline__status"><span class="badge badge--green">✅ Selesai</span></div>
+          </div>
+        </div>
+
+        <!-- H+3 -->
+        <div class="timeline__item" style="animation-delay: 0.4s;">
+          <div class="timeline__dot timeline__dot--completed">✓</div>
+          <div class="timeline__card">
+            <div class="timeline__hour">H+3</div>
+            <h3 class="timeline__title">Source Quality Audit</h3>
+            <p class="timeline__desc">Audit menyeluruh terhadap pipeline sumber informasi. Ditemukan bahwa AI mengambil data dari sumber tidak kredibel (Reddit comments, artikel satir, forum) tanpa verifikasi.</p>
+            <div class="timeline__status"><span class="badge badge--green">✅ Selesai</span></div>
+          </div>
+        </div>
+
+        <!-- H+5 -->
+        <div class="timeline__item" style="animation-delay: 0.5s;">
+          <div class="timeline__dot timeline__dot--completed">✓</div>
+          <div class="timeline__card">
+            <div class="timeline__hour">H+5</div>
+            <h3 class="timeline__title">Implementasi Source Credibility Filter</h3>
+            <p class="timeline__desc">Diterapkan sistem Source Credibility Score yang mem-filter sumber informasi berdasarkan reliabilitas. Sumber satir, forum, dan UGC (user-generated content) di-downrank atau di-exclude.</p>
+            <div class="timeline__status"><span class="badge badge--green">✅ Selesai</span></div>
+          </div>
+        </div>
+
+        <!-- H+7 -->
+        <div class="timeline__item" style="animation-delay: 0.6s;">
+          <div class="timeline__dot timeline__dot--completed">✓</div>
+          <div class="timeline__card">
+            <div class="timeline__hour">H+7</div>
+            <h3 class="timeline__title">Enhanced Fact-Checking Pipeline</h3>
+            <p class="timeline__desc">Pipeline fact-checking ditingkatkan dengan cross-reference ke sumber otoritatif (WHO, NIH, peer-reviewed journals) untuk query sensitif.</p>
+            <div class="timeline__status"><span class="badge badge--green">✅ Selesai</span></div>
+          </div>
+        </div>
+
+        <!-- H+10 -->
+        <div class="timeline__item" style="animation-delay: 0.7s;">
+          <div class="timeline__dot timeline__dot--in-progress">⟳</div>
+          <div class="timeline__card">
+            <div class="timeline__hour">H+10</div>
+            <h3 class="timeline__title">Gradual Re-enable dengan Monitoring</h3>
+            <p class="timeline__desc">AI Overview diaktifkan kembali secara bertahap dimulai dari query non-sensitif. Real-time monitoring dan human-in-the-loop review untuk kategori tertentu.</p>
+            <div class="timeline__status"><span class="badge badge--blue">🔄 Dalam Proses</span></div>
+          </div>
+        </div>
+
+        <!-- H+12 -->
+        <div class="timeline__item" style="animation-delay: 0.8s;">
+          <div class="timeline__dot timeline__dot--in-progress">⟳</div>
+          <div class="timeline__card">
+            <div class="timeline__hour">H+12</div>
+            <h3 class="timeline__title">Transparency Report & User Controls</h3>
+            <p class="timeline__desc">Publikasi laporan transparansi bulanan tentang akurasi AI Overview. Penambahan fitur "Report inaccuracy" yang lebih prominent dan opsi opt-out bagi pengguna.</p>
+            <div class="timeline__status"><span class="badge badge--blue">🔄 Dalam Proses</span></div>
+          </div>
+        </div>
+
+        <!-- H+14 -->
+        <div class="timeline__item" style="animation-delay: 0.9s;">
+          <div class="timeline__dot timeline__dot--pending">•</div>
+          <div class="timeline__card">
+            <div class="timeline__hour">H+14</div>
+            <h3 class="timeline__title">Full AI Safety Review & Policy Update</h3>
+            <p class="timeline__desc">Review menyeluruh terhadap semua produk AI Google (Search, Bard/Gemini, Assistant) oleh tim AI Safety. Pembaruan kebijakan AI ethics dan responsible AI deployment.</p>
+            <div class="timeline__status"><span class="badge badge--gray">⏳ Pending</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FAQ SECTION
+       ============================================================ -->
+  <section class="section section--alt" id="faq">
+    <div class="container">
+      <div class="section__header">
+        <div class="section__tag">❓ Pertanyaan Umum</div>
+        <h2 class="section__title">FAQ</h2>
+        <p class="section__desc">
+          Jawaban atas pertanyaan yang sering diajukan terkait insiden AI Overview Google.
+        </p>
+      </div>
+
+      <div class="accordion" style="max-width: 680px; margin: 0 auto;">
+        <!-- FAQ 1 -->
+        <div class="accordion__item is-open">
+          <button class="accordion__trigger">
+            <span>Apa itu AI Overview dan mengapa bisa memberikan informasi salah?</span>
+            <div class="accordion__icon">▼</div>
+          </button>
+          <div class="accordion__panel">
+            <div class="accordion__content">
+              AI Overview adalah fitur Google Search yang menampilkan ringkasan jawaban yang dihasilkan oleh AI di bagian atas hasil pencarian. Fitur ini menggunakan Large Language Model (LLM) yang menghasilkan teks berdasarkan pola dari data pelatihan. LLM rentan terhadap "hallucination" — menghasilkan informasi yang terdengar meyakinkan namun sepenuhnya salah. Dalam kasus ini, AI mengambil informasi dari sumber tidak kredibel (Reddit, artikel satir) tanpa verifikasi.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="accordion__item">
+          <button class="accordion__trigger">
+            <span>Apakah AI Overview masih menampilkan informasi medis?</span>
+            <div class="accordion__icon">▼</div>
+          </button>
+          <div class="accordion__panel">
+            <div class="accordion__content">
+              Google telah menonaktifkan AI Overview untuk query terkait kesehatan dan medis. Re-enablement akan dilakukan secara bertahap dengan cross-reference ke sumber otoritatif (WHO, NIH, peer-reviewed journals). Anda dapat menonaktifkan AI Overview sepenuhnya melalui pengaturan Google Search.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="accordion__item">
+          <button class="accordion__trigger">
+            <span>Saya mengikuti saran dari AI Overview dan mengalami kerugian. Apa yang bisa saya lakukan?</span>
+            <div class="accordion__icon">▼</div>
+          </button>
+          <div class="accordion__panel">
+            <div class="accordion__content">
+              Jika Anda mengalami kerugian langsung akibat informasi salah dari AI Overview, Anda dapat mengajukan klaim kompensasi melalui formulir di halaman ini. Sertakan bukti-bukti terkait (screenshot, catatan medis jika relevan, bukti kerugian finansial). Tim kami akan meninjau klaim dalam 3-5 hari kerja. Untuk masalah medis serius, segera konsultasikan dengan profesional kesehatan.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="accordion__item">
+          <button class="accordion__trigger">
+            <span>Bagaimana cara menonaktifkan AI Overview di Google Search?</span>
+            <div class="accordion__icon">▼</div>
+          </button>
+          <div class="accordion__panel">
+            <div class="accordion__content">
+              Anda dapat menonaktifkan AI Overview melalui Settings → Search Settings → AI Overview → Off. Anda juga bisa menggunakan URL parameter &udm=14 untuk mendapatkan hasil pencarian tradisional tanpa AI Overview. Google berkomitmen untuk memberikan kontrol penuh kepada pengguna.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="accordion__item">
+          <button class="accordion__trigger">
+            <span>Apa langkah Google untuk mencegah kejadian serupa?</span>
+            <div class="accordion__icon">▼</div>
+          </button>
+          <div class="accordion__panel">
+            <div class="accordion__content">
+              Google telah mengambil beberapa langkah: (1) Source Credibility Score untuk mem-filter sumber tidak kredibel, (2) Enhanced fact-checking pipeline dengan cross-reference ke sumber otoritatif, (3) Real-time monitoring dan human-in-the-loop review, (4) Transparency report bulanan, (5) User controls yang lebih prominent. Detail lengkap tersedia di Timeline Perbaikan.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CLAIM FORM SECTION (Static)
+       ============================================================ -->
+  <section class="section" id="claim-form-section">
+    <div class="container">
+      <div class="section__header">
+        <div class="section__tag">💬 Formulir Klaim</div>
+        <h2 class="section__title">Ajukan Klaim Kompensasi</h2>
+        <p class="section__desc">
+          Isi formulir di bawah ini. Tim kami akan memproses klaim Anda dalam 3-5 hari kerja.
+        </p>
+      </div>
+
+      <div class="card" style="max-width: 560px; margin: 0 auto;">
+        <form novalidate>
+          <div class="form-group">
+            <label class="form-label" for="claimant_name">Nama Lengkap</label>
+            <input type="text" id="claimant_name" class="form-input" placeholder="Masukkan nama lengkap Anda" required />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="claimant_email">Email</label>
+            <input type="email" id="claimant_email" class="form-input" placeholder="email@domain.com" required />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="claim_category">Kategori</label>
+            <select id="claim_category" class="form-input">
+              <option value="">— Pilih kategori —</option>
+              <option value="medical">Informasi Medis Salah</option>
+              <option value="scientific">Fakta Ilmiah Keliru</option>
+              <option value="business">Kerugian Bisnis</option>
+              <option value="legal">Informasi Hukum Menyesatkan</option>
+              <option value="other">Lainnya</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="claim_desc">Deskripsi Klaim</label>
+            <textarea id="claim_desc" class="form-textarea" rows="4" placeholder="Jelaskan dampak yang Anda alami akibat informasi salah dari AI Overview Google..." required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="claim_amount">Estimasi Kerugian (USD)</label>
+            <input type="text" id="claim_amount" class="form-input" placeholder="contoh: 200.00" />
+          </div>
+
+          <button type="button" class="btn btn--primary btn--block">
+            📨 Kirim Klaim
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       OTHER CASES
+       ============================================================ -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section__header">
+        <div class="section__tag">📂 Kasus Lainnya</div>
+        <h2 class="section__title">Protocol Transparansi Lainnya</h2>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; max-width: 680px; margin: 0 auto;">
+        <a href="public-air-canada.html" class="card" style="text-decoration: none; text-align: center; padding: 28px;">
+          <div style="font-size: 2.5rem; margin-bottom: 12px;">✈️</div>
+          <h3 style="font-size: 1rem; margin-bottom: 4px; color: var(--aep-ink);">Air Canada</h3>
+          <p style="font-size: 0.82rem; color: var(--aep-slate);">Chatbot memberikan info diskon salah</p>
+          <span class="badge badge--green" style="margin-top: 12px;">🟢 Active</span>
+        </a>
+        <a href="public-dpd.html" class="card" style="text-decoration: none; text-align: center; padding: 28px;">
+          <div style="font-size: 2.5rem; margin-bottom: 12px;">📦</div>
+          <h3 style="font-size: 1rem; margin-bottom: 4px; color: var(--aep-ink);">DPD</h3>
+          <p style="font-size: 0.82rem; color: var(--aep-slate);">Chatbot menghina perusahaan sendiri</p>
+          <span class="badge badge--green" style="margin-top: 12px;">🟢 Active</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer">
+    <p class="footer__text">
+      Halaman ini dikelola melalui <a href="admin.html">AEP Platform</a> — Algorithmic Empathy Protocol &copy; 2026
+    </p>
+  </footer>
+
+</body>
+</html>

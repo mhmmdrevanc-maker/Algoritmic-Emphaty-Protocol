@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AEP Platform — Algorithmic Empathy Protocol</title>
+  <meta name="description"
+    content="Algorithmic Empathy Protocol — SaaS platform untuk manajemen krisis AI Hallucination. Transparansi, akuntabilitas, dan kompensasi otomatis." />
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="frontend/css/style.css" />
+  <style>
+    .landing-hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #0F172A 0%, #1E293B 40%, #1E3A5F 100%);
+      color: white;
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .landing-hero::before {
+      content: '';
+      position: absolute;
+      top: -30%;
+      right: -15%;
+      width: 800px;
+      height: 800px;
+      background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, transparent 65%);
+      pointer-events: none;
+      animation: floatOrb 8s ease-in-out infinite;
+    }
+
+    .landing-hero::after {
+      content: '';
+      position: absolute;
+      bottom: -20%;
+      left: -10%;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(6, 182, 212, 0.1) 0%, transparent 65%);
+      pointer-events: none;
+      animation: floatOrb 10s ease-in-out infinite reverse;
+    }
+
+    @keyframes floatOrb {
+      0%, 100% { transform: translate(0, 0); }
+      50% { transform: translate(30px, -20px); }
+    }
+
+    .landing-content {
+      position: relative;
+      z-index: 1;
+      max-width: 720px;
+      padding: 48px 24px;
+    }
+
+    .landing-logo {
+      width: 80px;
+      height: 80px;
+      border-radius: 20px;
+      object-fit: cover;
+      box-shadow: 0 8px 40px rgba(59, 130, 246, 0.3);
+      margin-bottom: 32px;
+      border: 2px solid rgba(255,255,255,0.15);
+    }
+
+    .landing-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 18px;
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.8);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 28px;
+    }
+
+    .landing-badge__dot {
+      width: 8px;
+      height: 8px;
+      background: #10B981;
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
+
+    .landing-title {
+      font-size: 3.2rem;
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+      margin-bottom: 20px;
+      background: linear-gradient(135deg, #FFFFFF 0%, #93C5FD 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .landing-desc {
+      font-size: 1.15rem;
+      line-height: 1.7;
+      color: rgba(255, 255, 255, 0.65);
+      margin-bottom: 40px;
+    }
+
+    .landing-actions {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 64px;
+    }
+
+    .landing-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 16px 36px;
+      border-radius: 14px;
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      text-decoration: none;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      cursor: pointer;
+      border: none;
+    }
+
+    .landing-btn--primary {
+      background: linear-gradient(135deg, #3B82F6, #2563EB);
+      color: white;
+      box-shadow: 0 4px 24px rgba(59, 130, 246, 0.4);
+    }
+
+    .landing-btn--primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 40px rgba(59, 130, 246, 0.5);
+      color: white;
+    }
+
+    .landing-btn--outline {
+      background: transparent;
+      color: white;
+      border: 1.5px solid rgba(255, 255, 255, 0.25);
+    }
+
+    .landing-btn--outline:hover {
+      background: rgba(255, 255, 255, 0.08);
+      border-color: rgba(255, 255, 255, 0.4);
+      transform: translateY(-2px);
+      color: white;
+    }
+
+    .landing-cases {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    .landing-case-card {
+      background: rgba(255, 255, 255, 0.06);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      padding: 24px 16px;
+      text-decoration: none;
+      color: white;
+      transition: all 0.3s ease;
+    }
+
+    .landing-case-card:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: rgba(255, 255, 255, 0.2);
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+      color: white;
+    }
+
+    .landing-case-card__emoji {
+      font-size: 2rem;
+      margin-bottom: 12px;
+    }
+
+    .landing-case-card__name {
+      font-size: 0.9rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .landing-case-card__desc {
+      font-size: 0.75rem;
+      color: rgba(255, 255, 255, 0.5);
+      line-height: 1.4;
+    }
+
+    .landing-footer {
+      position: absolute;
+      bottom: 24px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-size: 0.75rem;
+      color: rgba(255, 255, 255, 0.3);
+    }
+
+    @media (max-width: 768px) {
+      .landing-title { font-size: 2.2rem; }
+      .landing-desc { font-size: 1rem; }
+      .landing-cases { grid-template-columns: 1fr; max-width: 320px; }
+      .landing-actions { flex-direction: column; align-items: center; }
+    }
+  </style>
+</head>
+
+<body>
+  <section class="landing-hero">
+    <div class="landing-content">
+      <img src="frontend/AEP_Logo.jpg" alt="AEP Logo" class="landing-logo" />
+
+      <div class="landing-badge">
+        <span class="landing-badge__dot"></span>
+        <span>Platform Aktif — 3 Protocol Berjalan</span>
+      </div>
+
+      <h1 class="landing-title">Algorithmic Empathy Protocol</h1>
+
+      <p class="landing-desc">
+        Platform SaaS untuk manajemen krisis AI Hallucination. Bangun transparansi publik, kelola timeline perbaikan,
+        dan proses klaim kompensasi secara otomatis — semua dalam satu dashboard.
+      </p>
+
+      <div class="landing-actions">
+        <a href="frontend/admin.html" class="landing-btn landing-btn--primary">
+          ⚡ Buka Admin Dashboard
+        </a>
+        <a href="#cases" class="landing-btn landing-btn--outline">
+          📋 Lihat Studi Kasus
+        </a>
+      </div>
+
+      <div class="landing-cases" id="cases">
+        <a href="frontend/public-air-canada.html" class="landing-case-card">
+          <div class="landing-case-card__emoji">✈️</div>
+          <div class="landing-case-card__name">Air Canada</div>
+          <div class="landing-case-card__desc">Chatbot AI memberikan info diskon salah</div>
+        </a>
+        <a href="frontend/public-dpd.html" class="landing-case-card">
+          <div class="landing-case-card__emoji">📦</div>
+          <div class="landing-case-card__name">DPD</div>
+          <div class="landing-case-card__desc">Chatbot menghina perusahaan sendiri</div>
+        </a>
+        <a href="frontend/public-google.html" class="landing-case-card">
+          <div class="landing-case-card__emoji">🔍</div>
+          <div class="landing-case-card__name">Google / Alphabet</div>
+          <div class="landing-case-card__desc">AI Overview halusinasi info medis</div>
+        </a>
+      </div>
+    </div>
+
+    <div class="landing-footer">
+      &copy; 2026 AEP Platform — Algorithmic Empathy Protocol. All rights reserved.
+    </div>
+  </section>
+</body>
+
+</html>
